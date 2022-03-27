@@ -1,60 +1,271 @@
+body {
+    background: #e0e5ec;
+}
 
 .container{
-    width:220px;
-    height:180px;
-    padding:30px;
+    width:300px;
+    height:200px;
+    padding:16px;
 }
 
 .header {
     /*height:50px;*/
     display:inline-block;
     vertical-align: bottom;
-    background-color: red;
+    /*background-color: red;*/
 }
 .header_text {
     display: inline-block;
     vertical-align: bottom;
-    background-color: red;
+    padding-left: 2px;
     font-size: 30px;
     font-weight: 600;
 }
 
 .set{
-    padding-top:20px;
+    padding-top:10px;
 }
 
 
-.summery_text {
-    display: inline-block;
+.summery {
+    /*display: inline-block;*/
+    padding-left: 10px;
     vertical-align: bottom;
-    background-color: blue;
+    /*background-color: blue;*/
     font-size: 18px;
     font-weight: 600;
 }
 
 .keywordset {
-    padding-top: 10px;
-}
-
-.keywordset_text {
-
-    display: inline-block;
+    padding-top: 7px;
+    padding-left: 10px;
+    /*display: inline-block;*/
     vertical-align: bottom;
-    background-color: blue;
+    /*background-color: blue;*/
     font-size: 18px;
     font-weight: 600;
 }
 
-button {
-    height: 30px;
-    width: 30px;
-    outline: none;
-    margin: 10px;
-    border: none;
-    border-radius: 2px;
+.searchword {
+    padding-top: 7px;
+    padding-left: 10px;
+    /*display: inline-block;*/
+    vertical-align: bottom;
+    /*background-color: blue;*/
+    font-size: 18px;
+    font-weight: 600;
 }
 
-button.current {
-  box-shadow: 0 0 0 2px white,
-              0 0 0 4px black;
+.preview {
+    padding-top: 7px;
+    padding-left: 10px;
+    /*display: inline-block;*/
+    vertical-align: bottom;
+    /*background-color: blue;*/
+    font-size: 18px;
+    font-weight: 600;
 }
+
+
+.saveBtn {
+    text-align: center;
+}
+
+button {
+    /*디폴트 스타일 제거*/
+    /*
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    */
+
+    margin: 20px;
+}
+   
+
+.save-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5), 
+        7px 7px 20px 0px rgba(0,0,0,.1), 
+        4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+}
+
+
+.btn-3 {
+    background: rgb(0,172,238);
+    background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+}
+
+    .btn-3 span {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .btn-3:before,
+    .btn-3:after {
+        position: absolute;
+        content: "";
+        right: 0;
+        top: 0;
+        background: rgba(2,126,251,1);
+        transition: all 0.3s ease;
+    }
+
+    .btn-3:before {
+        height: 0%;
+        width: 2px;
+    }
+
+    .btn-3:after {
+        width: 0%;
+        height: 2px;
+    }
+
+    .btn-3:hover {
+        background: transparent;
+        box-shadow: none;
+    }
+
+        .btn-3:hover:before {
+            height: 100%;
+        }
+
+        .btn-3:hover:after {
+            width: 100%;
+        }
+
+    .btn-3 span:hover {
+        color: rgba(2,126,251,1);
+    }
+
+    .btn-3 span:before,
+    .btn-3 span:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: 0;
+        background: rgba(2,126,251,1);
+        transition: all 0.3s ease;
+    }
+
+    .btn-3 span:before {
+        width: 2px;
+        height: 0%;
+    }
+
+    .btn-3 span:after {
+        width: 0%;
+        height: 2px;
+    }
+
+    .btn-3 span:hover:before {
+        height: 100%;
+    }
+
+    .btn-3 span:hover:after {
+        width: 100%;
+    }
+
+
+/*
+
+.btn {
+    background-color: #f0ecfc;
+    background-image: linear-gradient(315deg, #f0ecfc 0%, #c797eb 74%);
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+}
+
+.btn span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.btn:before,
+.btn:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    background: #c797eb;
+    transition: all 0.3s ease;
+ }
+
+.btn:before {
+        height: 0%;
+        width: 2px;
+}
+
+.btn:after {
+    width: 0%;
+    height: 2px;
+}
+ 
+
+.btn:hover {
+    background: transparent;
+    color: #c797eb;
+}
+
+.btn:hover:before {
+    height: 100%;
+}
+
+.btn:hover:after {
+    width: 100%;
+}
+
+
+.btn span:hover {
+    color: #c797eb;
+}
+
+
+.btn span:before,
+.btn span:after {
+    position: absolute;
+    content: "";
+    left: 0px;
+    top: 0px;
+    background: #f00;
+    transition: all 0.3s ease;
+}
+
+.btn span:before {
+    width: 2px;
+    height: 0%;
+}
+.btn span:after {
+    height: 2px;
+    width: 0%;
+}
+.btn span:hover:before {
+    height: 100%;
+}
+.btn span:hover:after {
+    width: 100%;
+}*/
