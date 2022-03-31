@@ -1,0 +1,84 @@
+body {
+    background: #e0e5ec;
+}
+
+.container{
+    width:300px;
+    height:200px;
+    padding:16px;
+}
+
+.header {
+    /*height:50px;*/
+    display:inline-block;
+    vertical-align: bottom;
+    /*background-color: red;*/
+}
+.header_text {
+    display: inline-block;
+    vertical-align: bottom;
+    padding-left: 2px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.set{
+    padding-top:10px;
+}
+
+
+.summery {
+    /*display: inline-block;*/
+    padding-left: 10px;
+    vertical-align: bottom;
+    /*background-color: blue;*/
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.keywordset {
+    padding-top: 7px;
+    padding-left: 10px;
+    /*display: inline-block;*/
+    vertical-align: bottom;
+    /*background-color: blue;*/
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.searchword {
+    padding-top: 7px;
+    padding-left: 10px;
+    /*display: inline-block;*/
+    vertical-align: bottom;
+    /*background-color: blue;*/
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.preview {
+    padding-top: 7px;
+    padding-left: 10px;
+    /*display: inline-block;*/
+    vertical-align: bottom;
+    /*background-color: blue;*/
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+.saveBtn {
+    text-align: center;
+}
+
+button {
+    /*디폴트 스타일 제거*/
+    /*
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    */
+
+    margin: 20px;
+}
+   

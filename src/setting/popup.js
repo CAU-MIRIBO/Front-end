@@ -1,3 +1,28 @@
+window.onload = function() {
+
+    //save setting
+  $("#save-btn").on("click", (e) => {
+    var isClick = $(".click").hasClass("active");
+    chrome.storage.sync.set({ isClick: isClick ? 1 : 0 });
+
+    if (!!isClick) {
+      chrome.storage.sync.set({
+        keyCode: $("#save-btn .value").attr("key-code"),
+      });
+
+      chrome.storage.sync.set({ keyName: $("#save-btn .value").text() });
+    } else {
+      chrome.storage.sync.set({ timeout: $("#save-btn").val() });
+    }
+
+    chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+      chrome.tabs.reload(tabs[0].id);
+    });
+  });
+
+};
+
+/*
 let page = document.getElementById("buttonDiv");
 let selectedClassName = "current";
 const presetButtonColors = ["#3aa757", "#e8453c", "#f9bb2d", "#4688f1"];
@@ -44,3 +69,4 @@ function constructOptions(buttonColors) {
 
 // Initialize the page by constructing the color options
 constructOptions(presetButtonColors);
+*/
