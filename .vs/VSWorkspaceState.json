@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\inject",
+    "\\src\\setting"
   ],
-  "SelectedNode": "\\options.html",
+  "SelectedNode": "\\manifest.json",
   "PreviewInSolutionExplorer": false
 }
